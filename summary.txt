@@ -1,0 +1,30 @@
+# Summary 
+
+The use cases were distributed to each member for completion and to merge once they are done. The distribution of work based on use cases was as follows:
+
+Sangjin (8)
+"View Public Info"
+"Login"
+"Register"
+"View My Flights"
+"Search For Flights"
+"Purchase tickets"
+"Give Ratings and Comment on previous flights"
+"logout"
+
+
+Tamer (5)
+"Track My Spending"
+"View flights"
+"Create new flights"
+"Change Status of Flights"
+"Add airplane in the system"
+
+
+Jay (6)
+"Add new airport in the system"
+"View my flight rartings"
+"View frequent customers"
+"View reports"
+"View earned revenue"
+"View Top destinations"
