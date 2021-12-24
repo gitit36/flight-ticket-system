@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- HTML template source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_interior_design&stacked=h -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+        <script type="text/javascript">
+        function setForm(value) {
+            if(value == 'flights'){
+                document.getElementById('flights').style = 'display:block;';
+                document.getElementById('status').style = 'display:none;';
+            }
+            else {
+                document.getElementById('status').style = 'display:block;';
+                document.getElementById('flights').style = 'display:none;';
+            }
+        }
+		function setForm2(value) {
+            if(value == 'round-trip'){
+                document.getElementById('trip_type').style = 'display:block;';
+            }
+            else {
+                document.getElementById('trip_type').style = 'display:none;';
+            }
+        }
+        </script>
+
+    </head>
+    <body>
+
+        <style type="text/css">
+            table, th, td{border: 1px solid black;}
+            /* style source: https://zetawiki.com/wiki/CSS_%ED%85%8C%EC%9D%B4%EB%B8%94_%EB%B2%88%ED%98%B8_%EB%B6%99%EC%9D%B4%EA%B8%B0 */
+            tbody>tr {counter-increment: aaa;}
+            tbody>tr>td:first-child:before {content: counter(aaa) " ";}
+            body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+            body {font-size:16px;}
+            .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+            .w3-half img:hover{opacity:1}
+        </style>
+
+		<!-- Sidebar/menu -->
+		<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+			<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+			<div class="w3-container">
+			<h3 class="w3-padding-64"><b>Air Ticket ✈ </b><br>Reservation</b></h3>
+			</div>
+			<div class="w3-bar-block">
+			<a href="/login" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Login</a> 
+			<a href="/register" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Register</a> 
+			</div>
+		</nav>
+
+		<!-- PAGE CONTENT! -->
+		<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+			<!-- Header -->
+			<div class="w3-container" style="margin-top:80px" id="showcase">
+                <h1 class="w3-jumbo"><b>Public View</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red"><b>Search Flights or Check Status</b></h1>
+                <hr style="width:50px;border:5px solid red" class="w3-round">
+			</div>
+			</br></br>
+			<form action="/" method="POST"></form>
+                <label>What public info would you like to see?</label>
+                <select name="choice" onchange="setForm(this.value)">
+                    <option value="flights"> Search Flights </option>
+                    <option value="status"> Flight Status </option>
+                </select>
+            </form>
+			</br></br>
+            <div id="flights">
+                <form action="/" name="flights" method="POST">
+                    <strong> Flying from </strong> </br>
+                    <input type="text" name = "departure" placeholder="Abu Dhabi or AUH" required/> </br></br>
+                    <strong>Flying to</strong> </br>
+                    <input type="text" name = "arrival" placeholder="Seoul or ICN" required/> </br></br>
+                    <strong>Outbound</strong> </br>
+                    <input type="text" name = "outbound" placeholder="2021-12-02" required/> </br></br>
+					<div id="trip_type" style="display: none">
+						<strong>Return</strong> </br>
+                    	<input type="text" name = "return" placeholder="2021-12-25" required/> </br></br>
+					</div>
+                    <submit name="flights" value="Submit!"/> </br>
+                    <button type = "submit" name="flights" value="flights">Search Flight</button></br>
+                </form>
+				</br></br>
+				<form action="/" name="trip_type" method="POST"></form>
+					<label>One-way or round-trip?</label>
+					<select name="trip_type" onchange="setForm2(this.value)">
+						<option value= "one-way"> One-way </option>
+						<option value= "round-trip"> Round-trip </option>
+					</select>
+				</form>
+            </div>
+			
+			<div id="status" style="display: none">
+                <form action="/" name="status" method="POST">
+                    <strong> Airline name </strong> </br>
+                    <input type="text" name = "airline" placeholder="Delta" required/> </br></br>
+                    <strong>Flight number </strong> </br>
+                    <input type="text" name = "flight_num" placeholder="234234" required/> </br></br>
+					<strong> Departure date </strong> </br>
+                    <input type="text" name = "departure_date" placeholder="2021-12-28" required/> </br></br>
+                    <strong> Arrival date </strong> </br>
+                    <input type="text" name = "arrival_date" placeholder="2021-12-28" required/> </br></br>
+                    <submit name="status" value="Submit!"/> </br>
+                    <button type = "submit" name="status" value="status"> Check status </button></br></br>
+                </form>
+            </div>
+            </br>
+            </br>
+            {% if error %}
+                <p class="error"><strong>Error:</strong> {{error}}</p>
+            {% endif %}
+        </div>
+    </body>
+</html>
