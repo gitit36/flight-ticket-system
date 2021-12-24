@@ -1,0 +1,51 @@
+
+
+Jay Patel
+
+For the following HTML files corresponds with the following use case:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+topDest.html:
+	Here it will return the top 3 desitination in span of 1 month before and in span of 1 year before.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+freqCust.html:
+	Here it will show the top frequent customer up to the 1 year before . It alwasy shows the amount of the time the customer has flown under the Amount of Times. It will also display the flight number of what the top flyers, few on under the table for Frequent Customer and Flight Number. I was going to do if the the val is greater than 1 than it returns none but but flying 1 time is more than any other cutomer if you don't have an customer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+totalSale.html
+	Here in the part of the use case it will display the total amount of tickets bought in price from now until a month before, this is under the Total Sale in 1 Month. This is similarly done one the 1 year prior and display all the tickets bought in the span of 1 year
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+viewRep.html
+	Here it will show the total amount of tickets bought in in the past mounth from todays date and before. This is done for the year and all the tickets sold in the span of a year from today onwards
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rating.html
+	Here we will see all of the rating of average rating for each flight and it will alwasy show all of of the comments each flight
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+addairport.html
+	Here we will add the airport into the database and and if there is the same airport it will send back an error saying that the airport already exists. 
+
+What Jay Patel did:
+
+Do use cases:
+	Add new airport in the system
+		- To use it you go to customer, login, than on the side panel you can pick add airport
+		This will add an airport and if the airport is already their it will thorw you an error
+	View flight ratings
+		- To use it you go to customer, login, than on the side panel you can pick view ratings. 
+		You are able to view the rating and all the reative info
+	View frequent customers
+		- To use it you go to customer, login, than on the side panel you can pick Frequent Customer
+		And you you will be able to view all the infor the frequent customers
+	View reports
+		- To use it you go to customer, login, than on the side panel you can pick View Reports. You 	
+		willthen be able to see all of the information for View reports like the amount of tickets 
+		bought in different time frams
+	View Earned Revenue
+		- To use it you go to customer, login, than on the side panel you can pick and you will be 
+		able to see the total Revenue of all of the flights for different time periods
+	View Top destinations
+		- To use it you go to customer, login, than on the side panel you can pick Top Destination 
+		and will be able to see the top 3 destination based on tickets bought for differnet time interval 
+
+Merge Files:
+	Merged the files different use cases, made it so that only customers can access curtain side panel buttons,
+	same with the staff use cases.
+	
