@@ -21,3 +21,6 @@ In order to learn the use cases, functionalities, and the explanation for the ba
 ```
 "UseCases-README"
 ```
+
+<img width="1440" alt="Screen Shot 2021-12-25 at 10 24 47 AM" src="https://user-images.githubusercontent.com/24204239/147375476-343e6053-5562-45b0-b143-96d05cae9b5e.png">
+<img width="1440" alt="Screen Shot 2021-12-25 at 10 27 17 AM" src="https://user-images.githubusercontent.com/24204239/147375477-c077c146-01c0-418a-bf2a-1316e1f75a9d.png">
